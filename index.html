@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<title>Clima</title>
 	<meta charset="utf-8">
-	<meta name="robots" content="index, follow"/>
-	<meta name="author" content="tiagofiuza.myartsonline.com"/>
+	<meta name="robots" content="index, follow" />
+	<meta name="author" content="tiagofiuza.myartsonline.com" />
 	<!-- SCRIPTS -->
-	<script type="text/javascript" src="js/scripts.js"></script>
-	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+
 	<script type="text/javascript">
-		window.onload = function(){
+		window.onload = function () {
 			localizacao();
-		    pegarData();
+			pegarData();
 			togglebutton();
 		}
 	</script>
-	<!-- CSS -->
+
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/ui-toggle.css">
 </head>
+
 <body>
 	<div class="container">
-		<p id="datap"></p>		
+		<p id="datap"></p>
 		<label class="toggle"><input type="checkbox" id="convert"> °C &nbsp; °F<b class="switch"></b></label>
 		<div class="fundo">
-		<p class="cidade"> </p>
+			<p class="cidade"> </p>
 		</div>
 		<p class="temperatura"></p>
 		<img src="img/cloud.png" class="cloud">
@@ -34,5 +35,9 @@
 		<img src="img/wind.png" class="wind">
 		<p class="vento"></p>
 	</div>
+
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 </body>
+
 </html>
